@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors : {
-        origin: ["https://chat-app-client-neon-eight.vercel.app/"],
+        origin: ["https://chat-app-client-neon-eight.vercel.app"],
         methods: ["GET", "POST"],
         credentials : true
     }
