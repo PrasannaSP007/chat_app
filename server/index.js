@@ -32,8 +32,8 @@ io.on("connection", (socket) => {
     });
 });
 
-app.get('/', (req, res) => {
-    res.join("Hello");
+app.get("/", (req, res) => {
+    res.json("Hello");
 });
 
 server.listen(port, () => {
