@@ -6,10 +6,10 @@ const port = process.env.PORT;
 const { Server } = require("socket.io");
 
 const corsOptions = {
-  origin: 'https://chat-app-client-neon-eight.vercel.app',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  origin: "https://chat-app-client-neon-eight.vercel.app",
+  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
   credentials: true,
-  optionsSuccessStatus: 204,
+  optionsSuccessStatus: 204
 };
 
 app.use(cors(corsOptions));
