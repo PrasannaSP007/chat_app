@@ -6,7 +6,7 @@ const port = process.env.PORT;
 const { Server } = require("socket.io");
 
 const corsOptions = {
-  origin: "https://chat-app-client-neon-eight.vercel.app",
+  origin: "*",
   methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
 };
 
@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors : {
-        origin: ["https://chat-app-client-neon-eight.vercel.app"],
+        origin: "*",
         methods: ["GET", "POST"]
     }
 });
