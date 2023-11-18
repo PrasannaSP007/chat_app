@@ -32,6 +32,10 @@ io.on("connection", (socket) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.join("Hello");
+});
+
 server.listen(port, () => {
     console.log("Server started..!");
 })
