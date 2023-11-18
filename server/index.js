@@ -7,9 +7,7 @@ const { Server } = require("socket.io");
 
 const corsOptions = {
   origin: "https://chat-app-client-neon-eight.vercel.app",
-  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
-  credentials: true,
-  optionsSuccessStatus: 204
+  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
 };
 
 app.use(cors(corsOptions));
@@ -19,8 +17,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors : {
         origin: ["https://chat-app-client-neon-eight.vercel.app"],
-        methods: ["GET", "POST"],
-        credentials : true
+        methods: ["GET", "POST"]
     }
 });
 
