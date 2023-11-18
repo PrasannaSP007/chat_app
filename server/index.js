@@ -32,6 +32,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(port, () => {
+app.listen(port, () => {
     console.log("Server started..!");
 })
