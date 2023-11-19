@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const cors = require('cors');
-const port = process.env.PORT;
+// const port = process.env.PORT;
 const { Server } = require("socket.io");
 
 const corsOptions = {
@@ -42,6 +42,6 @@ io.on("connection", (socket) => {
 //     res.json("Hello");
 // });
 
-server.listen(port, () => {
+server.listen(8080, () => {
     console.log("Server started..!");
 })
