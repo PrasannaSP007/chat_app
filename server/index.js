@@ -47,6 +47,6 @@ io.on("connection", (socket) => {
 //     res.json("Hello");
 // });
 
-server.listen(() => {
+server.listen(8080, () => {
     console.log("Server started..!");
 })
