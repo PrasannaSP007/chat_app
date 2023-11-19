@@ -2,20 +2,22 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const cors = require('cors');
+const { Server } = require("socket.io");
+
 // const port = process.env.PORT;
-const { Server } = require("socket.io") (http, {
-  cors : {
-    origin : "*",
-    methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
-  }
-});
+// const { Server } = require("socket.io") (http, {
+//   cors : {
+//     origin : "*",
+//     methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
+//   }
+// });
 
-const corsOptions = {
-  origin: "*",
-  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
-};
+// const corsOptions = {
+//   origin: "*",
+//   methods: ['GET','HEAD','PUT','PATCH','POST','DELETE']
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 const server = http.createServer(app);
 
