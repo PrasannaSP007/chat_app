@@ -49,6 +49,10 @@ app.get("/", (req, res) => {
     res.json("Hello");
 });
 
-server.listen(8080, () => {
-    console.log("Server is started");
+server.listen(8080, (error) => {
+    if(error) {
+        console.log("Server is not started");
+    } else {
+        console.log("Server is started");
+    }
 });
