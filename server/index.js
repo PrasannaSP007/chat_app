@@ -49,6 +49,6 @@ app.get("/", (req, res) => {
     res.json("Hello");
 });
 
-server.listen(8080, () => {
+server.listen("https://chat-app-server-theta-vert.vercel.app", () => {
     console.log("Server started..!");
 })
