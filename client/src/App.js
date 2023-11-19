@@ -3,7 +3,7 @@ import './App.css';
 import io from 'socket.io-client';
 import Chat from './Chat';
 
-const socket = io.connect("https://localhost:8080");
+const socket = io.connect();
 
 function App() {
 
