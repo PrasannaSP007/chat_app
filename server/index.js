@@ -45,9 +45,9 @@ io.on("connection", (socket) => {
     });
 });
 
-// app.get("/", (req, res) => {
-//     res.json("Hello");
-// });
+app.get("/", (req, res) => {
+    res.json("Hello");
+});
 
 server.listen(8080, () => {
     console.log("Server started..!");
