@@ -51,4 +51,4 @@ app.get("/", (req, res) => {
 
 server.listen(8080, () => {
     console.log("Server is started");
-}
+});
