@@ -45,9 +45,9 @@ io.on("connection", (socket) => {
     });
 });
 
-app.get("/", (req, res) => {
-    res.json("Hello");
-});
+// app.get("/", (req, res) => {
+//     res.json("Hello");
+// });
 
 server.listen(process.env.PORT, () => {
     console.log("Server started..!");
