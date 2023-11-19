@@ -4,7 +4,7 @@ const http = require('http');
 const cors = require('cors');
 const { Server } = require("socket.io");
 
-const port = 8080;
+// const port = 8080;
 // const { Server } = require("socket.io") (http, {
 //   cors : {
 //     origin : "*",
@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
     res.json("Hello");
 });
 
-server.listen(port, (error) => {
+server.listen(8080, (error) => {
   if (error) {
     console.error("Error starting the server:", error);
   } else {
