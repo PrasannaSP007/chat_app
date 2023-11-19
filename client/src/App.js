@@ -3,7 +3,7 @@ import './App.css';
 import io from 'socket.io-client';
 import Chat from './Chat';
 
-const socket = io.connect();
+const socket = io.connect(process.env.REACT_APP_SERVER_URI);
 
 function App() {
 
